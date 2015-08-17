@@ -1,4 +1,4 @@
-# Web Fonts CLI
+# Web-Fonts CLI
 
 ## Installation
 
@@ -14,10 +14,13 @@ Create `config.json` file with the containing data:
 
 ```json
 {
-  name: "Font Name",
-  version: "1.0.0" // version will be used in bower.json file. default is: 0.0.1
+  "name": "Font Name",
+  "version": "1.0.0"
 }
 ```
+
+*`version` will be used in `bower.json` file. default is: 0.0.1*
+
 
 Place font files in `src` directory and run the following commands:
 

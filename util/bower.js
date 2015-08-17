@@ -5,13 +5,13 @@ var options = require('../util/options.js');
 
 module.exports.create = function() {
 
-    var bowerData = helper.template('bower.json');
+    var data = helper.template('bower.json', {
+        "name" : options.get('name'),
+        "family" : options.get('name'),
+        "version" : options.get('version')
+    });
 
-    bowerData = bowerData.replace(/{{name}}/g, helper.slug(options.get('name')));
-    bowerData = bowerData.replace(/{{family}}/g, options.get('name'));
-    bowerData = bowerData.replace(/{{version}}/g, options.get('version'));
-
-    fs.writeFile(path.join(process.cwd(), 'bower.json'), bowerData, function(error) {
+    fs.writeFile(path.join(process.cwd(), 'bower.json'), data, function(error) {
         if(error) {
             helper.error(error);
             return false;

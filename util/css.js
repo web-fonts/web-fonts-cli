@@ -13,10 +13,10 @@ module.exports.create = function(file) {
 
     _.each(file, function(file) {
 
-        var data = helper.template(file);
-
-        data = data.replace(/{{name}}/g, options.get('name'));
-        data = data.replace(/{{font}}/g, path.join('..', 'fonts', helper.slug(options.get('name'))));
+        var data = helper.template(file, {
+            "name": options.get('name'),
+            "font": path.join('..', 'fonts', helper.slug(options.get('name')))
+        });
 
         var outputFile = path.join(process.cwd(), 'dist', 'css', file);
 

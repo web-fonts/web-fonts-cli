@@ -13,17 +13,22 @@ module.exports.create = function() {
             return false;
         }
 
+        var extensions = [];
+
         _.each(fonts, function(item) {
+
             var name = helper.slug(options.get('name')+'-webfont') + path.extname(item);
+
+            extensions.push(path.extname(item));
 
             fs.copySync(
                 path.join(process.cwd(), 'src', item),
-                path.join(process.cwd(), 'dist', 'fonts', name)
+                path.join(process.cwd(), 'dist/fonts', name)
             );
 
         });
 
-        helper.message("[Web Fonts: ttf, woff, woff2, eot, svg] created.");
+        helper.message("[Web Fonts: "+extensions.join(', ')+"] created.");
 
     });
 

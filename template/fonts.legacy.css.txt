@@ -1,0 +1,8 @@
+@font-face {
+    font-family: '{{name}}';
+    src: url('{{font}}-webfont.eot?#iefix') format('embedded-opentype'),
+	 url('{{font}}-webfont.woff2') format('woff2'),
+	 url('{{font}}-webfont.woff') format('woff'),
+	 url('{{font}}-webfont.ttf')  format('truetype'),
+	 url('{{font}}-webfont.svg#svgFix') format('svg');
+}

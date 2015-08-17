@@ -1,0 +1,5 @@
+@font-face {
+    font-family: '{{name}}';
+    src: url('{{font}}-webfont.woff2') format('woff2'),
+         url('{{font}}-webfont.woff') format('woff');
+}

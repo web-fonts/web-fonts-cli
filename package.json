@@ -1,0 +1,42 @@
+{
+  "name": "web-fonts-cli",
+  "version": "1.0.0",
+  "description": "Web Fonts CLI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "preferGlobal": "true",
+  "bin": {
+    "web-fonts": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/web-fonts/web-fonts-cli.git"
+  },
+  "keywords": [
+    "cli",
+    "web",
+    "font",
+    "fonts",
+    "webfonts",
+    "webfont",
+    "woff",
+    "woff2",
+    "ttf",
+    "eot"
+  ],
+  "author": "Lado Lomidze <lado.lomidze@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/web-fonts/web-fonts-cli/issues"
+  },
+  "homepage": "https://github.com/web-fonts/web-fonts-cli#readme",
+  "dependencies": {
+    "clean-css": "^3.3.9",
+    "colors": "^1.1.2",
+    "commander": "^2.8.1",
+    "fs-extra": "^0.23.1",
+    "lodash": "^3.10.1"
+  }
+}

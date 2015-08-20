@@ -2,13 +2,12 @@
   "name": "web-fonts-cli",
   "version": "1.0.0",
   "description": "Web-Fonts CLI",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "preferGlobal": "true",
   "bin": {
-    "web-fonts": "index.js"
+    "web-fonts": "bin/web-fonts"
   },
   "repository": {
     "type": "git",

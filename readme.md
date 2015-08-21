@@ -55,6 +55,14 @@ This command will remove everything, that was generated with the `create` comman
 $ web-fonts clean
 ```
 
+### Publishing Package
+
+To publish package on [Bower](http://bower.io) run the following command:
+
+```
+$ web-fonts publish bower
+```
+
 ### Help
 
 Run the following commands to display the help message.

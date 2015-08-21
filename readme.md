@@ -1,5 +1,8 @@
 # Web-Fonts CLI
 
+[![npm](https://img.shields.io/npm/v/web-fonts-cli.svg)](https://www.npmjs.com/package/web-fonts-cli)
+[![npm](https://img.shields.io/npm/l/web-fonts-cli.svg)](https://www.npmjs.com/package/web-fonts-cli)
+
 **Note**: This CLI does not create web font files from `.ttf` or something like that.
 
 This is just a web-font *package* generator for the [Web-Fonts](https://github.com/web-fonts) project, so install it if you are contributor only.

@@ -18,7 +18,7 @@ $ npm install -g web-fonts-cli
 
 ### Create Web Fonts
 
-Create `config.json` file with the containing data: 
+Create `font.json` file with the containing data: 
 
 ```json
 {
@@ -65,7 +65,7 @@ $ web-fonts publish bower
 
 ### Init Package
 
-To automatically create `/fonts` directory and `config.json` file containing the default settings, run the following command:
+To automatically create `/fonts` directory and `font.json` file containing the default settings, run the following command:
 
 ```
 $ web-fonts init
@@ -77,7 +77,7 @@ You can also pass the font name, as a first argument to the `init` method:
 $ web-fonts init "My Font Name"
 ```
 
-It will override the `name` property in the `config.json` file.
+It will override the `name` property in the `font.json` file.
 
 To override the `version`, you can pass the [semver](http://semver.org/) object, as a second argument to the `init` method:
 
@@ -87,7 +87,7 @@ $ web-fonts init "My Font Name" 1.2.3
 
 **Note:** *The order of arguments does matter.*
  
-If you have already initialized or created `config.json` file and want to replace it's options, add the `-f` or `--force` flag at the end of the command:
+If you have already initialized or created `font.json` file and want to replace it's options, add the `-f` or `--force` flag at the end of the command:
 
 ```
 $ web-fonts init "My Font Name" 1.2.4 -f

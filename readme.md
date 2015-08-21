@@ -85,7 +85,7 @@ To override the `version`, you can pass the [semver](http://semver.org/) object,
 $ web-fonts init "My Font Name" 1.2.3
 ```
 
-**Note:** *The order of arguments matter.*
+**Note:** *The order of arguments does matter.*
  
 If you have already initialized or created `config.json` file and want to replace it's options, add the `-f` or `--force` flag at the end of the command:
 

@@ -24,11 +24,13 @@ Create `font.json` file with the containing data (or run the `init` command, see
 ```json
 {
   "name": "Font Name",
+  "author": "Font Author",
   "version": "1.0.0"
 }
 ```
 
 * *`name` will be used in .css files as a `font-family` and etc.*
+* *`author` will be used in `README.md` as credits.*
 * *`version` will be used in package manager configuration file (`bower.json`, `package.json`). default is: 1.0.0.  Uses [Semantic Versioning](http://semver.org/).*
 
 

@@ -11,7 +11,7 @@ This is just a web-font *package* generator for the [Web-Fonts](https://github.c
 ## Installation
 
 ```
-$ npm install -g web-fonts-cli
+$ npm install web-fonts-cli -g
 ```
 
 ## Usage

@@ -19,7 +19,7 @@ $ npm install web-fonts-cli -g
 
 ### Create Web Fonts
 
-Create `font.json` file with the containing data: 
+Create `font.json` file with the containing data (or run the `init` command, see below): 
 
 ```json
 {
@@ -34,7 +34,7 @@ Create `font.json` file with the containing data:
 
 Place font files in `fonts` directory and run the following commands:
 
-(it does not matter, what you'll call the font files, after running the `create` command it will rename it correspondingly )
+(it does not matter, what you'll call the font files, after running the `create` command it will rename it correspondingly)
 
 ```
 $ cd /fonts_package_dir

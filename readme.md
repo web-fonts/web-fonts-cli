@@ -29,7 +29,7 @@ Create `font.json` file with the containing data:
 ```
 
 * *`name` will be used in .css files as a `font-family` and etc.*
-* *`version` will be used in `bower.json` file. default is: 1.0.0.  Uses [Semantic Versioning](http://semver.org/).*
+* *`version` will be used in package manager configuration file (bower.json, package.json). default is: 1.0.0.  Uses [Semantic Versioning](http://semver.org/).*
 
 
 Place font files in `fonts` directory and run the following commands:

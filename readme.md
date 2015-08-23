@@ -2,6 +2,7 @@
 
 [![npm](https://img.shields.io/npm/v/web-fonts-cli.svg)](https://www.npmjs.com/package/web-fonts-cli)
 [![npm](https://img.shields.io/npm/l/web-fonts-cli.svg)](https://www.npmjs.com/package/web-fonts-cli)
+[![npm](https://img.shields.io/npm/dm/web-fonts-cli.svg)](https://www.npmjs.com/package/web-fonts-cli)
 
 **Note**: This CLI does not create web font files from `.ttf` or something like that.
 

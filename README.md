@@ -111,4 +111,4 @@ If you won't pass any arguments to `web-fonts` command, it will display help inf
 
 ## License
 
-The Web-Fonts CLI package is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+The Web-Fonts CLI package is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).

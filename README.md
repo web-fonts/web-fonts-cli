@@ -60,10 +60,27 @@ $ web-fonts clean
 
 ### Publishing Package
 
+To publish package on Git run the following command:
+
+**Note:** This command should be called only ONCE and only 1st time, after creating a package.
+
+```
+$ web-fonts publish git
+```
+
 To publish package on [Bower](http://bower.io) run the following command:
 
 ```
 $ web-fonts publish bower
+```
+
+
+To publish package on [NPM](https://www.npmjs.com/) run the following command:
+
+```
+$ web-fonts publish npm
+# or
+$ npm publish
 ```
 
 ### Init Package
@@ -82,7 +99,13 @@ $ web-fonts init "My Font Name"
 
 It will override the `name` property in the `font.json` file.
 
-To override the `version`, you can pass the [semver](http://semver.org/) object, as a second argument to the `init` method:
+To override the `author`, you can pass the author name as a second argument to the `init` method:
+
+```
+$ web-fonts init "My Font Name" "Author Name"
+```
+
+To override the `version`, you can pass the [semver](http://semver.org/) object, as a third argument to the `init` method:
 
 ```
 $ web-fonts init "My Font Name" 1.2.3

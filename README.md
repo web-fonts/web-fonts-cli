@@ -108,7 +108,7 @@ $ web-fonts init "My Font Name" "Author Name"
 To override the `version`, you can pass the [semver](http://semver.org/) object, as a third argument to the `init` method:
 
 ```
-$ web-fonts init "My Font Name" 1.2.3
+$ web-fonts init "My Font Name" "Author Name" 1.2.3
 ```
 
 **Note:** *The order of arguments does matter.*
@@ -116,7 +116,7 @@ $ web-fonts init "My Font Name" 1.2.3
 If you have already initialized or created `font.json` file and want to replace it's options, add the `-f` or `--force` flag at the end of the command:
 
 ```
-$ web-fonts init "My Font Name" 1.2.4 -f
+$ web-fonts init "My Font Name" "Author Name" 1.2.4 -f
 ```
 
 ### Help

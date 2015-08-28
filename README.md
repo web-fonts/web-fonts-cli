@@ -62,7 +62,7 @@ $ web-fonts clean
 
 To publish package on Git run the following command:
 
-**Note:** This command should be called only ONCE and only 1st time, after creating a package.
+**Note:** This command should be called only **ONCE** and only **1st time**, after creating a package.
 
 ```
 $ web-fonts publish git
@@ -91,32 +91,26 @@ To automatically create `/fonts` directory and `font.json` file containing the d
 $ web-fonts init
 ```
 
-You can also pass the font name, as a first argument to the `init` method:
+You can also pass the font name, font author and font version as optional flags and arguments to the `init` method:
 
 ```
-$ web-fonts init "My Font Name"
+$ web-fonts init -n "My Font Name" -a "Font Author" -r 1.2.3
 ```
 
-It will override the `name` property in the `font.json` file.
-
-To override the `author`, you can pass the author name as a second argument to the `init` method:
+or use full flag names:
 
 ```
-$ web-fonts init "My Font Name" "Author Name"
+$ web-fonts init --name "My Font Name" --author "Font Author" --release 1.2.3
 ```
 
-To override the `version`, you can pass the [semver](http://semver.org/) object, as a third argument to the `init` method:
+The `release`, flag will be used as `version` in package manager systems and it must be the [semver](http://semver.org/) object.
 
-```
-$ web-fonts init "My Font Name" "Author Name" 1.2.3
-```
-
-**Note:** *The order of arguments does matter.*
+**Note:** Please do not put the `-V`, `-v`, or `--version` flag to the `init` method. This flag just outputs the current version of the **Web-Fonts CLI**. Use `--release` or `-r` flag instead.
  
 If you have already initialized or created `font.json` file and want to replace it's options, add the `-f` or `--force` flag at the end of the command:
 
 ```
-$ web-fonts init "My Font Name" "Author Name" 1.2.4 -f
+$ web-fonts init --name "My Font Name" --author "Font Author" --release 1.2.4 -f # or --force
 ```
 
 ### Help
